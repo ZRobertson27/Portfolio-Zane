@@ -50,11 +50,40 @@ nav li{
     width: 45%;
     border: 1px solid black;
     margin: 5px;
+    flex-wrap: wrap;
+    min-width: 200px;
+    border-radius: 30px;
+    background-color: aquamarine;
 }
 .card h2 {
     display: flex;
     justify-content: center;
+    background-color: maroon;
 }
 .card img {
     width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.card p {
+    padding: 8px;
+}
+
+.about img {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+}
+/* Set standard fullscreen width of project cards. */
+@media screen and (max-width: 992px) {
+    .card {
+        width: 45%;
+    }
+}
+/* Changes width of card on smaller screens to keep a good size. */
+@media screen and (max-width: 768px) {
+    .card{
+        width: 100%;
+    }
 }
