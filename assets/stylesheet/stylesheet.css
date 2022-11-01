@@ -3,7 +3,7 @@
 }
 
 body {
-
+    background-color: green;
 }
 header {
     display: flex;
@@ -15,24 +15,24 @@ header {
 
 header h1 {
     font-size: 40px;
-    border: 4px solid black;
     font-weight: 500;
     width: 100%;
+    text-align: center;
 }
 
 nav {
+    border:1px solid black;
     font-size: 25px;
-    border: 2px solid black;
     padding: 2px;
     display: flex;
     justify-content: center;
-    
+    background-color: goldenrod;
 }
 nav li{
-    display: inline;
-    border: 2px solid blue;
+    display: inline-flex;
     margin: 0;
     padding: 5px;
+    color: black;
 }
 
 #project-header {
@@ -46,19 +46,44 @@ nav li{
     justify-content: center;
     height: 40%;
 }
+
+.card0 {
+    width: 70%;
+    border: 1px solid black;
+    margin: 5px;
+    flex-wrap: wrap;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 30px;
+    background-color: aquamarine;
+}
+
+.card0 h3{
+    display:flex;
+    position: absolute;
+    justify-content: center;
+}
+
+.card0 img {
+    width: 100%;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.card0 p {
+    padding: 10px;
+}
 .card {
     width: 45%;
     border: 1px solid black;
     margin: 5px;
     flex-wrap: wrap;
-    min-width: 200px;
     border-radius: 30px;
     background-color: aquamarine;
 }
-.card h2 {
+.card h3 {
     display: flex;
     justify-content: center;
-    background-color: maroon;
 }
 .card img {
     width: 100%;
@@ -70,11 +95,44 @@ nav li{
     padding: 8px;
 }
 
-.about img {
-    display: flex;
-    justify-content: center;
-    width: 200px;
+.about {
+    display: block;
+    text-align: center;
+    border: 5px dotted black;
+    background-color: goldenrod;
 }
+.about img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+}
+
+.about p {
+    text-align: start;
+    font-size: 20px;
+}
+
+footer {
+
+}
+
+footer h4 {
+    text-align: center;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+footer ul li {
+    float: left;
+    margin-right: 10%;
+}
+
+
 /* Set standard fullscreen width of project cards. */
 @media screen and (max-width: 992px) {
     .card {
