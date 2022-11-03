@@ -12,14 +12,14 @@ header {
     margin: 0px;
     border: 0px;
 }
-
+/* Position header to center and set style*/
 header h1 {
     font-size: 40px;
     font-weight: 500;
     width: 100%;
     text-align: center;
 }
-
+/* Set nav bar position to center and style. */
 nav {
     border:1px solid black;
     font-size: 25px;
@@ -34,19 +34,24 @@ nav li{
     padding: 5px;
     color: black;
 }
-
+/* Last second addition for ease of use. Not styled. Will always be on screen. */
+.b2t {
+    position: fixed;
+    display: flex;
+}
+/* Center section title */
 #project-header {
     display: flex;
     justify-content: center;
 }
-
+/* Set to flex, wrap, and stay centered. */
 .projects {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     height: 40%;
 }
-
+/* Set to start larger than other projects */
 .card0 {
     width: 70%;
     border: 1px solid black;
@@ -63,16 +68,17 @@ nav li{
     position: absolute;
     justify-content: center;
 }
-
+/* Set image size with padding to look a little nicer */
 .card0 img {
     width: 100%;
     border-radius: 30px;
     padding: 5px;
 }
-
+/* Just looks nicer with a little padding */
 .card0 p {
     padding: 10px;
 }
+/* Width set so more than 2 projects won't appear in the same row. Wraps so other cards display properly. */
 .card {
     width: 45%;
     border: 1px solid black;
@@ -129,17 +135,21 @@ footer ul {
 
 footer ul li {
     float: left;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 
 
+
+/* Code disabled for being redudant */
 /* Set standard fullscreen width of project cards. */
+/*
 @media screen and (max-width: 992px) {
     .card {
         width: 45%;
     }
 }
 /* Changes width of card on smaller screens to keep a good size. */
+/*
 @media screen and (max-width: 768px) {
     .card{
         width: 100%;
